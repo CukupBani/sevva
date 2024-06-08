@@ -8,11 +8,13 @@ import React from 'react'
 const page = () => {
   return (
     <>
-        <Navbar />
-        <SearchNavbar />
+        <Navbar visibility='visible' />
         <section>
-          <div className='bg-[]'>
-            <p>Hello Dunia</p>
+          <div className="bg-[url('/productImage/bg-product.jpg')] bg-no-repeat bg-center min-h-[346px]">
+            <div className='w-full min-h-[346px] bg-black bg-opacity-50 flex flex-col items-center justify-center gap-3'>
+              <h1 className='font-bold text-white text-5xl tracking-wide'>MOBIL</h1>
+              <p className='font-medium text-xl text-white'>Home &gt; Mobil</p>
+            </div>
           </div>
           <div className='p-10 flex gap-5'>
             <FilterBox />
