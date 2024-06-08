@@ -12,7 +12,7 @@ const page = () => {
         <SearchNavbar />
         <section>
           <div className='bg-[]'>
-            <p>Hello World</p>
+            <p>Hello Dunia</p>
           </div>
           <div className='p-10 flex gap-5'>
             <FilterBox />
