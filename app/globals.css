@@ -42,12 +42,11 @@ body {
 
 /* Navbar */
 .navbar-transition {
-  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-  height: 90px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .navbar-hidden {
   opacity: 0;
-  height: 0;
+  visibility: hidden;
 }
 /* End of Navbar */
