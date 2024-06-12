@@ -60,7 +60,7 @@ const page = () => {
 
           {/* Button */}
           <div className='flex items-center gap-4 justify-center mt-8'>
-          <Link href={'/'}>
+          <Link href={'/Chat'}>
               <button className='px-4 py-2 bg-white rounded-lg border border-black font-medium text-black duration-200 hover:bg-black hover:text-white'>
                 Chat Penyedia Jasa
               </button>
