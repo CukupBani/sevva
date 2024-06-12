@@ -285,3 +285,31 @@ export const FILTER_LOKASI = [
     {key: 'sukoharjo', value: 'Kab. Sukoharjo'},
     {key: 'klaten', value: 'Kab. Klaten'},
 ]
+
+export const PROFILE_SETTINGS = [
+    {
+        key: 'edit',
+        title: 'Edit Profile',
+        img: '/profile_settings_icon/edit_profile.svg'
+    },
+    {
+        key: 'alamat',
+        title: 'Alamat',
+        img: '/profile_settings_icon/alamat.svg'
+    },
+    {
+        key: 'wishlist',
+        title: 'Wishlist',
+        img: '/profile_settings_icon/wishlist.svg'
+    },
+    {
+        key: 'notification',
+        title: 'Notifikasi',
+        img: '/profile_settings_icon/notification.svg'
+    },
+    {
+        key: 'logout',
+        title: 'Keluar',
+        img: '/profile_settings_icon/logout.svg'
+    },
+]
