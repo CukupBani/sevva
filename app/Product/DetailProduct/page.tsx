@@ -60,12 +60,16 @@ const page = () => {
 
           {/* Button */}
           <div className='flex items-center gap-4 justify-center mt-8'>
-            <button className='px-4 py-2 bg-white rounded-lg border border-black font-medium text-black duration-200 hover:bg-black hover:text-white'>
-              Booking
-            </button>
-            <button className='px-4 py-2 bg-[#1B2538] rounded-lg font-medium text-white duration-200 hover:bg-black'>
-              Sewa Sekarang
-            </button>
+          <Link href={'/'}>
+              <button className='px-4 py-2 bg-white rounded-lg border border-black font-medium text-black duration-200 hover:bg-black hover:text-white'>
+                Chat Penyedia Jasa
+              </button>
+            </Link>
+          <Link href={'/SewaKendaraan'}>
+              <button className='px-4 py-2 bg-[#1B2538] rounded-lg font-medium text-white duration-200 hover:bg-black'>
+                Sewa Sekarang
+              </button>
+            </Link>
           </div>
           {/* End of Button */}
         </div>
