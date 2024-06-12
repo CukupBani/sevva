@@ -6,12 +6,16 @@ const page = () => {
   return (
     <>
         <Navbar visibility='hidden' />
-        <section className='px-10 py-20 flex gap-5 justify-center'>
+        <div className='flex items-center justify-center p-10'>
+            <h1 className='font-bold text-3xl text-[#202f4b] w-[80%]'>PENGATURAN PROFIL</h1>
+        </div>
+
+        <section className='px-10 pb-20 flex gap-5 justify-center'>
             {/* Option */}
             <div className='w-[20%] border-2 rounded-lg shadow-xl h-fit'>
                 <ul>
                    {PROFILE_SETTINGS.map((profil) => (
-                    <li key={profil.key} className='flex items-center gap-4 py-4 px-6 font-semibold text-xl border-b-2 border-black'>
+                    <li key={profil.key} className='flex items-center gap-4 py-4 px-6 font-semibold text-xl border-b-2 border-black duration-200 hover:bg-gray-200'>
                         <img src={profil.img} alt='icon' className='w-7'/>
                         <p>{profil.title}</p>
                     </li>

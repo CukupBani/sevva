@@ -313,3 +313,27 @@ export const PROFILE_SETTINGS = [
         img: '/profile_settings_icon/logout.svg'
     },
 ]
+
+export const CHAT_LIST = [
+    {
+        key: 'user1',
+        name: 'BIMOSEWA',
+        status: 'penjual',
+        img: 'testimoni_img/person1.jpeg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quos sit sapiente non consequuntur voluptas quaerat quasi quia sint illo reiciendis ullam architecto id quis nihil deserunt maxime mollitia magni quae, facere eveniet saepe sed? Modi, sit neque? Quae quasi vel modi nihil dicta, distinctio perspiciatis odit ipsa velit necessitatibus?'        
+    },
+    {
+        key: 'user2',
+        name: 'banosijos',
+        status: 'penjual',
+        img: 'testimoni_img/person2.jpeg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quos sit sapiente non consequuntur voluptas quaerat quasi quia sint illo reiciendis ullam architecto id quis nihil deserunt maxime mollitia magni quae, facere eveniet saepe sed? Modi, sit neque? Quae quasi vel modi nihil dicta, distinctio perspiciatis odit ipsa velit necessitatibus?'        
+    },
+    {
+        key: 'user3',
+        name: 'ALFRIZKYZ0',
+        status: 'penjual',
+        img: 'testimoni_img/person3.jpeg',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quos sit sapiente non consequuntur voluptas quaerat quasi quia sint illo reiciendis ullam architecto id quis nihil deserunt maxime mollitia magni quae, facere eveniet saepe sed? Modi, sit neque? Quae quasi vel modi nihil dicta, distinctio perspiciatis odit ipsa velit necessitatibus?'        
+    },
+]
