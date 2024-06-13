@@ -337,3 +337,21 @@ export const CHAT_LIST = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quos sit sapiente non consequuntur voluptas quaerat quasi quia sint illo reiciendis ullam architecto id quis nihil deserunt maxime mollitia magni quae, facere eveniet saepe sed? Modi, sit neque? Quae quasi vel modi nihil dicta, distinctio perspiciatis odit ipsa velit necessitatibus?'        
     },
 ]
+
+export const SIDEBAR_LIST = [
+    {
+        key: 'daftarKendaraan',
+        title: 'Daftar Kendaraan',
+        link: '/'
+    },
+    {
+        key: 'pengajuanSewa',
+        title: 'Pengajuan Sewa',
+        link: '/'
+    },
+    {
+        key: 'riwayatSewa',
+        title: 'Riwayat Sewa',
+        link: '/'
+    },
+]
