@@ -11,6 +11,7 @@ type navbarProps = {
 const Navbar = ({visibility}: navbarProps) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,6 +26,10 @@ const Navbar = ({visibility}: navbarProps) => {
         window.removeEventListener('scroll', handleScroll);
         };
     }, [prevScrollPos, visible]);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
 
   return (
     <>
@@ -47,6 +52,25 @@ const Navbar = ({visibility}: navbarProps) => {
                     </ul>
                 </div>
                 {/* End of Component Kiri */}
+
+                {/* Profile Button with Dropdown */}
+                <div className='relative'>
+                    <button onClick={toggleDropdown} className='bg-black text-white px-4 py-2'>
+                        Profil
+                    </button>
+                    <div className={`absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10 transition-all duration-300 ease-in-out transform ${dropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                        <Link href='/Profile' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                            Profil
+                        </Link>
+                        <Link href='/Market' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                            Kelola Kendaraan
+                        </Link>
+                        <Link href='/logout' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                            Logout
+                        </Link>
+                    </div>
+                </div>
+                {/* End of Profile Button with Dropdown */}
                     
                 {/* Component Kanan */}
                     <div className='flex items-center'>
