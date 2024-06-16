@@ -342,16 +342,31 @@ export const SIDEBAR_LIST = [
     {
         key: 'daftarKendaraan',
         title: 'Daftar Kendaraan',
+        icon: '/profile_settings_icon/car.svg',
         link: '/'
     },
     {
         key: 'pengajuanSewa',
         title: 'Pengajuan Sewa',
+        icon: '/profile_settings_icon/pengajuanSewa.svg',
         link: '/'
     },
     {
         key: 'riwayatSewa',
         title: 'Riwayat Sewa',
+        icon: '/profile_settings_icon/riwayatSewa.svg',
+        link: '/'
+    },
+    {
+        key: 'chat',
+        title: 'Chat',
+        icon: '/profile_settings_icon/chat.svg',
+        link: '/'
+    },
+    {
+        key: 'pengaturan',
+        title: 'Pengaturan',
+        icon: '/profile_settings_icon/setting.svg',
         link: '/'
     },
 ]
