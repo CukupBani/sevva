@@ -343,13 +343,13 @@ export const SIDEBAR_LIST = [
         key: 'daftarKendaraan',
         title: 'Daftar Kendaraan',
         icon: '/profile_settings_icon/car.svg',
-        link: '/'
+        link: '/Market'
     },
     {
         key: 'pengajuanSewa',
         title: 'Pengajuan Sewa',
         icon: '/profile_settings_icon/pengajuanSewa.svg',
-        link: '/'
+        link: '/Market/PengajuanSewa'
     },
     {
         key: 'riwayatSewa',

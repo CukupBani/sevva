@@ -9,7 +9,14 @@ const page = () => {
   return (
     <>
       <Navbar visibility='hidden' />
-      <section className='flex justify-center px-5 pt-10 pb-20 gap-5'>
+      <div className='flex items-center justify-center px-10 gap-5 pt-10'>
+        <Link href='/' className='fill-[#202f4b] duration-200 hover:fill-black'>
+          <svg clipRule="evenodd" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" width={40} height={40} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.012 2c5.518 0 9.997 4.48 9.997 9.998 0 5.517-4.479 9.997-9.997 9.997s-9.998-4.48-9.998-9.997c0-5.518 4.48-9.998 9.998-9.998zm-1.523 6.21s-1.502 1.505-3.255 3.259c-.147.147-.22.339-.22.531s.073.383.22.53c1.753 1.754 3.254 3.258 3.254 3.258.145.145.335.217.526.217.192-.001.384-.074.531-.221.292-.293.294-.766.003-1.057l-1.977-1.977h6.693c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-6.693l1.978-1.979c.29-.289.287-.762-.006-1.054-.147-.147-.339-.221-.53-.222-.19 0-.38.071-.524.215z" fillRule="nonzero"/></svg>
+        </Link>
+        <h1 className='font-bold w-[95%] text-3xl text-[#202f4b]'>MENU PENYEWA</h1>
+      </div>
+
+      <section className='flex justify-center px-5 pt-8 pb-20 gap-5'>
         {/* Sidebar */}
         <div className='w-[25%] border rounded-tl-lg shadow-lg h-fit'>
           <div className='flex flex-col'>
@@ -33,10 +40,10 @@ const page = () => {
 
             {/* Content List */}
             {SIDEBAR_LIST.map((sidebar) => (
-              <div key={sidebar.key} className='flex items-center gap-3 px-10 py-4 border-b-2 border-black duration-200 hover:bg-gray-200'>
+              <Link href={sidebar.link} key={sidebar.key} className='flex items-center gap-3 px-10 py-4 border-b-2 border-black duration-200 hover:bg-gray-200'>
                 <img src={sidebar.icon} alt='icon' className='w-8 h-8' />
                 <p className='font-bold text-lg'>{sidebar.title}</p>
-              </div>
+              </Link>
             ))}
             {/* End of Content List */}
           </div>
@@ -45,13 +52,13 @@ const page = () => {
 
         <div className='w-[70%] border rounded-tl-lg rounded-b-lg shadow-lg'>
           {/* Header */}
-          <SectionHeader title='Daftar Kendaraan' placeholder='Cari Kendaraan' buttonVisibility='visible' name='mobil' link='/'/>
+          <SectionHeader title='Daftar Kendaraan' placeholder='Cari Kendaraan' buttonVisibility='visible' name='mobil' link='/Market/Vehicle/AddVehicle'/>
           {/* End of Header */}
 
           <div className='grid grid-cols-3 gap-5 p-6'>
             {KENDARAAN_DISEWAKAN.map((kendaraan) => (
               <Link key={kendaraan.key} href='/' >
-                <ProductCardSewa img={kendaraan.img} title={kendaraan.title} harga={kendaraan.harga} />
+                <ProductCardSewa img={kendaraan.img} title={kendaraan.title} harga={kendaraan.harga} transmisi={kendaraan.transmisi} kapasitas={kendaraan.kapasitas} kategori={kendaraan.kategori} />
               </Link>
             ))}
           </div>
