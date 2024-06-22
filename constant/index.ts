@@ -6,7 +6,7 @@ export const NAVBAR_ELEMENT = [
         key: 'products', name: 'Produk', link: '/Product'
     },
     {
-        key: 'about_us', name: 'Tentang Kami', link: '/'
+        key: 'about_us', name: 'Tentang Kami', link: '/AboutUs'
     },
     {
         key: 'contact', name: 'Kontak', link: '/'
@@ -355,18 +355,100 @@ export const SIDEBAR_LIST = [
         key: 'riwayatSewa',
         title: 'Riwayat Sewa',
         icon: '/profile_settings_icon/riwayatSewa.svg',
-        link: '/'
+        link: '/Market/RiwayatSewa'
     },
     {
         key: 'chat',
         title: 'Chat',
         icon: '/profile_settings_icon/chat.svg',
-        link: '/'
+        link: '/Chat'
     },
     {
         key: 'pengaturan',
         title: 'Pengaturan',
         icon: '/profile_settings_icon/setting.svg',
         link: '/'
+    },
+]
+
+export const PENGAJUAN_SEWA = [
+    {
+        sewaID: '12345',
+        penyewa: 'TeukuUmar',
+        kendaraan: 'Mobil Lorem Ipsum',
+        lamaSewa: 2,
+        mulaiSewa: '24-01-2024',
+        selesaiSewa: '26-01-2024',
+        total: 800000,
+        img: '/productImage/car1.jpeg',
+    },
+    {
+        sewaID: '12346',
+        penyewa: 'TeukuUmar',
+        kendaraan: 'Mobil Lorem Ipsum',
+        lamaSewa: 2,
+        mulaiSewa: '24-01-2024',
+        selesaiSewa: '26-01-2024',
+        total: 800000,
+        img: '/productImage/car2.jpeg',
+    },
+    {
+        sewaID: '12347',
+        penyewa: 'TeukuUmar',
+        kendaraan: 'Mobil Lorem Ipsum',
+        lamaSewa: 2,
+        mulaiSewa: '24-01-2024',
+        selesaiSewa: '26-01-2024',
+        total: 800000,
+        img: '/productImage/car3.jpeg',
+    },
+    {
+        sewaID: '12348',
+        penyewa: 'TeukuUmar',
+        kendaraan: 'Mobil Lorem Ipsum',
+        lamaSewa: 2,
+        mulaiSewa: '24-01-2024',
+        selesaiSewa: '26-01-2024',
+        total: 800000,
+        img: '/productImage/car4.jpeg',
+    },
+]
+
+export const RIWAYAT_SEWA = [
+    {
+        sewaID: 'sewa1',
+        img: '/productImage/car1.jpeg',
+        kendaraan: 'Mobil Lorem Ipsum',
+        tanggalPengajuan: '24-01-2024',
+        tanggalPengembalian: '26-01-2024',
+        penyewa: 'TeukuUmar',
+        lamaSewa: 2
+    },
+    {
+        sewaID: 'sewa2',
+        img: '/productImage/car2.jpeg',
+        kendaraan: 'Mobil Lorem Ipsum',
+        tanggalPengajuan: '24-01-2024',
+        tanggalPengembalian: '26-01-2024',
+        penyewa: 'TeukuUmar',
+        lamaSewa: 2
+    },
+    {
+        sewaID: 'sewa3',
+        img: '/productImage/car3.jpeg',
+        kendaraan: 'Mobil Lorem Ipsum',
+        tanggalPengajuan: '24-01-2024',
+        tanggalPengembalian: '26-01-2024',
+        penyewa: 'TeukuUmar',
+        lamaSewa: 2
+    },
+    {
+        sewaID: 'sewa4',
+        img: '/productImage/car4.jpeg',
+        kendaraan: 'Mobil Lorem Ipsum',
+        tanggalPengajuan: '24-01-2024',
+        tanggalPengembalian: '26-01-2024',
+        penyewa: 'TeukuUmar',
+        lamaSewa: 2
     },
 ]

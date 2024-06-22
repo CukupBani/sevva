@@ -55,8 +55,9 @@ const Navbar = ({visibility}: navbarProps) => {
 
                 {/* Profile Button with Dropdown */}
                 <div className='relative'>
-                    <button onClick={toggleDropdown} className='bg-black text-white px-4 py-2'>
-                        Profil
+                    <button onClick={toggleDropdown} className='text-[#1B2538] fill-[#1B2538] flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-[#E0FBE2] duration-200 hover:bg-[#F7E135] hover:shadow-md'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"/></svg>
+                        <p>Masuk</p>
                     </button>
                     <div className={`absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10 transition-all duration-300 ease-in-out transform ${dropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
                         <Link href='/Profile' className='block px-4 py-2 text-black hover:bg-gray-200'>
@@ -72,18 +73,9 @@ const Navbar = ({visibility}: navbarProps) => {
                 </div>
                 {/* End of Profile Button with Dropdown */}
                     
-                {/* Component Kanan */}
-                    <div className='flex items-center'>
-                        <a href='/Login/LoginPage'>
-                            <button className='text-[#1B2538] fill-[#1B2538] flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-[#E0FBE2] duration-200 hover:bg-[#F7E135] hover:shadow-md'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"/></svg>
-                                <p>Masuk</p>
-                            </button>
-                        </a>
-                    </div>
-                {/* End of Component Kanan */}
             </div>
             {/* End Of Container */}
+
             <div className={`flex items-center gap-2 px-10 py-2 bg-[#131A26] w-full ${visibility}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-[#F7E135]'><path d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z"/></svg>
                 <input type='text' placeholder='Masukkan Kata Kunci' className='w-full bg-transparent text-white focus:outline-none'/>
