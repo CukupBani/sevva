@@ -20,6 +20,7 @@ const HeroSlider = () => {
     <>
         <section className='relative'>
             <div className="embla mx-auto" ref={emblaRef}>
+                {/* Carousel */}
                 <div className="embla__container">
                     {SLIDER_ELEMENT.map((slide) => (
                         <div key={slide.key} className='embla__slide w-screen'>
@@ -27,6 +28,7 @@ const HeroSlider = () => {
                         </div>
                     ))}
                 </div>
+                {/* End of Carousel */}
                 
                 <div className='absolute z-10 w-full h-full top-0 flex items-center justify-between px-10'>
                     <button className='embla__prev h-10 w-10 rounded-full bg-black flex items-center justify-center opacity-30 duration-300 hover:opacity-100' onClick={scrollPrev}>
