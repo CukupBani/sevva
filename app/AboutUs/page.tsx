@@ -6,7 +6,8 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <Navbar visibility='hidden' />
+    {/* disembunyikan */}
+      <Navbar visibility='hidden' />  
       <HeroAboutUs />
       <CompanyProfile />
     </>
