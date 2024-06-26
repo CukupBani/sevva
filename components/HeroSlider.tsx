@@ -23,7 +23,7 @@ const HeroSlider = () => {
                 <div className="embla__container">
                     {SLIDER_ELEMENT.map((slide) => (
                         <div key={slide.key} className='embla__slide'>
-                            <img src={slide.img} alt='slide-img' width={1440} className='object-cover h-[24rem]' />
+                            <img src={slide.img} alt='slide-img' className='object-cover w-screen h-[24rem]' />
                         </div>
                     ))}
                 </div>

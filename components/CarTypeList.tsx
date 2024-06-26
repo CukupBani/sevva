@@ -1,4 +1,5 @@
 import { TIPE_KENDARAAN } from '@/constant'
+import Link from 'next/link'
 import React from 'react'
 
 const CarTypeList = () => {
@@ -19,10 +20,10 @@ const CarTypeList = () => {
             {/* Content */}
             <div className='grid grid-cols-5 mt-8 gap-5'>
                 {TIPE_KENDARAAN.map((tipe) => (
-                    <div key={tipe.key} className='px-6 bg-gray-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3 h-40 duration-500 hover:shadow-xl hover:-translate-y-1.5'>
+                    <Link href={tipe.link} key={tipe.key} className='px-6 bg-gray-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3 h-40 duration-500 hover:shadow-xl hover:-translate-y-1.5'>
                         <img src={tipe.img} alt='icon-tipe' className='w-14' />
                         <p className='text-2xl font-semibold text-center'>{tipe.title}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
             {/* End of Content */}
