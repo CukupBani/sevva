@@ -6,7 +6,6 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    {/* disembunyikan */}
       <Navbar visibility='hidden' />  
       <HeroAboutUs />
       <CompanyProfile />
